@@ -22,6 +22,7 @@ IDE : Visual Studio Code(Mainly) , NotePad++ , Atom , Vim , Word (the expensive 
 
 Main Language : Python3 
 
+
 # Outro 
 
 So yeah , this is me , living a normal live in indonesia as a student of Ignatius Global School 
