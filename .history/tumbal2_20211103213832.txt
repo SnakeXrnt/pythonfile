@@ -1,0 +1,6 @@
+hello
+world
+i am ethan
+
+this is my first time using gitdoc
+
