@@ -1,0 +1,31 @@
+BoxLayout:
+	orientation: "vertical"
+
+	Label:
+		text: "[b]00:00[/b]:00"
+		id: time
+		markup: True
+		font_name: "Roboto"
+		font_size: 50
+
+	BoxLayout:
+		orientation: "horizontal"
+		height: 90
+		size_hint: (1, None)
+		padding: 20
+		spacing: 20
+
+		Button:
+			text: "Start"
+			id: start_stop
+
+		Button:
+			text: "Reset"
+			id: reset
+
+	Label:
+		text: "00:00.[size=30]00[/size]"
+		id: stopwatch
+		markup: True
+		font_name: "Roboto"
+		font_size: 50

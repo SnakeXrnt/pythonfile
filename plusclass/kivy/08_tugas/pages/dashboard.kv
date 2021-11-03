@@ -1,0 +1,262 @@
+Screen:
+	name:"dashboard"
+	MDFloatLayout:
+		id: Layout0
+		md_bg_color: rgba(246, 250, 255, 255)
+		#MDToolbar:
+		#	title: "Dashboard"
+		#	md_bg_color: rgba(107, 127, 214, 255)
+		#	left_action_items: [["menu"]]
+		#	top: root.top
+
+		MDFloatLayout:
+			size_hint: 1, .33
+			pos_hint: {"center_y": .84}
+			md_bg_color: 1,1,1,1
+
+			MDLabel:
+				id: username
+				text: ""
+				font_name: "Roboto"
+				font_size: "16sp"
+				halign: "left"
+				pos_hint: {"center_y":.9}
+				x: root.ids.Layout0.x + 20
+				color: rgba(107, 127, 214, 255)
+				bold: True
+
+			MDIconButton:
+				icon: "chevron-down"
+				theme_text_color: "Custom"
+				text_color: rgba(107, 127, 214, 255)	
+				pos_hint: {"center_x": .31,"center_y": .895}
+
+			MDIconButton:
+				icon: "menu"
+				theme_text_color: "Custom"
+				text_color: rgba(107, 127, 214, 255)
+				pos_hint: {"center_x": .92,"center_y": .9}
+				on_press: app.logoutpage()
+
+			MDFloatLayout:
+				size_hint: 1, .40
+				pos_hint: {"center_y": .6}
+				md_bg_color: rgba(230, 230, 255, 255)
+
+				Image:
+					source: "assets/img/darwin.png"
+					size_hint_y: .6
+					pos_hint: {"center_x":.15, "center_y":.5}
+					canvas.before:
+						Color:
+							rgba: rgba(107, 127, 214, 255)
+						Ellipse:
+							size: 75, 75
+							pos: self.center_x - 37.5, self.center_y - 37.5
+
+				MDLabel:
+					id: postingan
+					text: ""
+					font_name: "Roboto"
+					font_size: "24sp"
+					halign: "center"
+					pos_hint: {"center_x":.40, "center_y":.6}
+					color: rgba(107, 127, 214, 255)
+					bold: True
+
+				MDLabel:
+					text: "Posts"
+					font_name: "Roboto"
+					font_size: "12sp"
+					halign: "center"
+					pos_hint: {"center_x":.40, "center_y":.3}
+					color: rgba(107, 127, 214, 255)
+
+				MDLabel:
+					id: pengikut
+					text: ""
+					font_name: "Roboto"
+					font_size: "24sp"
+					halign: "center"
+					pos_hint: {"center_x":.65, "center_y":.6}
+					color: rgba(107, 127, 214, 255)
+					bold: True
+
+				MDLabel:
+					text: "Follower"
+					font_name: "Roboto"
+					font_size: "12sp"
+					halign: "center"
+					pos_hint: {"center_x":.65, "center_y":.3}
+					color: rgba(107, 127, 214, 255)
+
+				MDLabel:
+					id: mengikuti
+					text: ""
+					font_name: "Roboto"
+					font_size: "24sp"
+					halign: "center"
+					pos_hint: {"center_x":.90, "center_y":.6}
+					color: rgba(107, 127, 214, 255)
+					bold: True
+
+				MDLabel:
+					text: "Following"
+					font_name: "Roboto"
+					font_size: "12sp"
+					halign: "center"
+					pos_hint: {"center_x":.90, "center_y":.3}
+					color: rgba(107, 127, 214, 255)
+
+			MDLabel:
+				id: nama
+				text: ""
+				font_name: "Roboto"
+				font_size: "12sp"
+				halign: "left"
+				pos_hint: {"center_x":.55, "center_y":.35}
+				color: rgba(107, 127, 214, 255)
+				bold: True
+
+			MDLabel:
+				id: tanggal
+				text: ""
+				font_name: "Roboto"
+				font_size: "12sp"
+				halign: "left"
+				pos_hint: {"center_x":.55, "center_y":.25}
+				color: rgba(107, 127, 214, 255)
+
+			MDLabel:
+				id: hobi
+				text: ""
+				font_name: "Roboto"
+				font_size: "12sp"
+				halign: "left"
+				pos_hint: {"center_x":.55, "center_y":.15}
+				color: rgba(107, 127, 214, 255)
+
+		MDFloatLayout:
+			size_hint: 1, .70
+			pos_hint: {"center_y": .35}
+			md_bg_color: rgba(107, 127, 214, 255)
+
+			MDFloatLayout:
+				size_hint: 1, .05
+				pos_hint: {"center_y": .975}
+				md_bg_color: rgba(230, 230, 255, 255)
+
+				MDLabel:
+					text: "Highlights"
+					font_name: "Roboto"
+					font_size: "12sp"
+					halign: "center"
+					pos_hint: {"center_x": .5, "center_y": .5}
+					bold: True
+					color: rgba(107, 127, 214, 255)
+
+			MDFloatLayout:
+				size_hint: 1, .2
+				pos_hint: {"center_y": .85}
+				md_bg_color: rgba(230, 230, 255, 255)
+
+				Image:
+					source: "assets/img/liberty2.png"
+					size_hint_y: .75
+					pos_hint: {"center_x": .13, "center_y": .5}
+					canvas.before:
+						Color:
+							rgba: rgba(255, 255, 255, 255)
+						Ellipse:
+							size: 75, 75
+							pos: self.center_x-37.5, self.center_y-37.5
+
+				Image:
+					source: "assets/img/ampera.png"
+					size_hint_y: .75
+					pos_hint: {"center_x": .39, "center_y": .5}
+					canvas.before:
+						Color:
+							rgba: rgba(255, 255, 255, 255)
+						Ellipse:
+							size: 75, 75
+							pos: self.center_x-37.5, self.center_y-37.5
+
+				Image:
+					source: "assets/img/eiffel.png"
+					size_hint_y: .75
+					pos_hint: {"center_x": .65, "center_y": .5}
+					canvas.before:
+						Color:
+							rgba: rgba(255, 255, 255, 255)
+						Ellipse:
+							size: 75, 75
+							pos: self.center_x-37.5, self.center_y-37.5
+
+				Image:
+					source: "assets/img/monas.png"
+					size_hint_y: .75
+					pos_hint: {"center_x": .91, "center_y": .5}
+					canvas.before:
+						Color:
+							rgba: rgba(255, 255, 255, 255)
+						Ellipse:
+							size: 75, 75
+							pos: self.center_x-37.5, self.center_y-37.5
+
+			MDFloatLayout:
+				size_hint: 1, .1
+				pos_hint: {"center_y": .70}
+				md_bg_color: rgba(200, 200, 255, 255)
+
+				MDIconButton:
+					icon: "wallpaper"
+					theme_text_color: "Custom"
+					text_color: rgba(255, 255, 255, 255)
+					pos_hint: {"center_x": .25,"center_y": .5}
+
+				MDIconButton:
+					icon: "archive"
+					theme_text_color: "Custom"
+					text_color: rgba(255, 255, 255, 255)
+					pos_hint: {"center_x": .75,"center_y": .5}
+
+			MDFloatLayout:
+				size_hint: 1, .69
+				pos_hint: {"center_y": .3}
+				md_bg_color: rgba(200, 200, 255, 255)
+
+				Image:
+					source: "assets/img/venti.png"
+					size_hint_y: .4
+					pos_hint: {"center_x": .17, "center_y": .8}
+
+				Image:
+					source: "assets/img/latte.jpg"
+					size_hint_y: .4
+					pos_hint: {"center_x": .51, "center_y": .8}
+
+				Image:
+					source: "assets/img/venti2.jpg"
+					size_hint_y: .4
+					pos_hint: {"center_x": .85, "center_y": .8}
+
+				Image:
+					source: "assets/img/venti3.jpg"
+					size_hint_y: .4
+					pos_hint: {"center_x": .17, "center_y": .4}
+
+				Image:
+					source: "assets/img/venti4.jpg"
+					size_hint_y: .4
+					pos_hint: {"center_x": .51, "center_y": .4}
+
+				Image:
+					source: "assets/img/venti5.jpg"
+					size_hint_y: .4
+					pos_hint: {"center_x": .85, "center_y": .4}
+
+				Image:
+					source: "assets/img/venti6.png"
+					size_hint_y: .4
+					pos_hint: {"center_x": .17, "center_y": .0}

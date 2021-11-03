@@ -1,0 +1,37 @@
+Screen:
+	name: "logoutpage"
+	MDFloatLayout:
+		md_bg_color: rgba(230, 230, 255, 255)
+		MDIcon:
+			icon: "instagram"
+			font_size: "100sp"
+			pos_hint: {"center_x":.5, "center_y":.6}
+			color: rgba(107, 127, 214, 255)
+			halign: "center"
+
+		MDLabel:
+			text: "Logout?"
+			pos_hint: {"center_x":.5, "center_y":.45}
+			halign: "center"
+			font_name: "Roboto"
+			color: rgba(107, 127, 214, 255)
+			bold: True
+			font_size: "28sp"
+
+		MDRectangleFlatButton:
+			text: "[color=rgba(107, 127, 214, 255)]Yes[/color]"
+			pos_hint: {"center_x":.33, "center_y":.35}
+			halign: "center"
+			font_name: "Roboto"
+			bold: True
+			font_size: "20sp"
+			on_press: app.to_login_page()
+
+		MDFlatButton:
+			text: "[color=rgba(107, 127, 214, 255)]No[/color]"
+			pos_hint: {"center_x":.66, "center_y":.35}
+			halign: "center"
+			font_name: "Roboto"
+			bold: True
+			font_size: "20sp"
+			on_press: app.to_dashboard_page()
