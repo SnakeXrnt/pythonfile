@@ -12,7 +12,7 @@ cursor.execute("""
     )     
     """)
 '''
-#cursor.execute('INSERT INTO employees VALUES ('anisa',')
+#
 
 
 connection.commit()
