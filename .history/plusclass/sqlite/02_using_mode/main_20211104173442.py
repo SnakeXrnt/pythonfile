@@ -19,5 +19,3 @@ cur.execute("""
     )
     """)
 
-conn.commit()
-con.close()

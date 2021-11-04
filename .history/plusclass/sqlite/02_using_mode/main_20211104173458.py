@@ -20,4 +20,4 @@ cur.execute("""
     """)
 
 conn.commit()
-con.close()
+con
