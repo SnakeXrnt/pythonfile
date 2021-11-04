@@ -20,8 +20,6 @@ emps = cursor.fetchall()
 for row in emps:
     print(row)
 
-for first,last,salary in emps:
-    print(first,last,salary)
 print()
 
 
