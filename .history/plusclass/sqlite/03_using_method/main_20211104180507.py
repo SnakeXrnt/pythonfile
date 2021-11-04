@@ -1,4 +1,4 @@
-from os import system 
+form os import system 
 
 from settings import Settings
 from employee import Employee
@@ -14,14 +14,8 @@ class App:
             )                                              
             """)
     def mainloop(self):
-        
-        while True:
-            system('cls')
-            print(self.settings.MENU)
-            option = input('Option : ').lower()
-            if option == 'q':
-                print('Thanks')
-                break
+        p
+    
 
 if __name__ == '__main__':
     app = App()

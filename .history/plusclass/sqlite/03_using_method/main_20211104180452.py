@@ -1,4 +1,4 @@
-from os import system 
+form os import system 
 
 from settings import Settings
 from employee import Employee
@@ -10,18 +10,11 @@ class App:
             CREATE TABLE IF NOT EXISTS employees (
             first TEXT,
             last TEXT,
-            salary INTEGER
-            )                                              
+            salary INTEGER                                              
             """)
     def mainloop(self):
-        
-        while True:
-            system('cls')
-            print(self.settings.MENU)
-            option = input('Option : ').lower()
-            if option == 'q':
-                print('Thanks')
-                break
+        pass
+    
 
 if __name__ == '__main__':
     app = App()
