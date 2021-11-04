@@ -14,12 +14,11 @@ class App:
             )                                              
             """)
 
-#    def insert_emp(self,emp):
-#        self.settings.CUR.excute('INSERT INTO employees VALUES (:first,:last,:salary)',{'first':emp.first,'last':emp.last,'salary':emp.salary})
+    def insert_emp(self,emp):
+        self.settings.CUR.excute('INSERT INTO employees VALUES (:first,:last,:salary)',{'first':emp.first,'last':emp.last,'salary':emp.salary})
 
     def insert_emp(self,emp):
-        with self.settings.CONN:
-            self.settings.CUR.excute('INSERT INTO employees VALUES (:first,:last,:salary)',{'first':emp.first,'last':emp.last,'salary':emp.salary})
+        with self.settings.
 
     def mainloop(self):
         
