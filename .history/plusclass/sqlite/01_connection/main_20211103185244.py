@@ -3,7 +3,7 @@ import sqlite3
 connection = sqlite3.connect("empolyee.db")
 
 cursor = connection.cursor() # c / cur 
-'''
+
 cursor.execute("""
     CREATE TABLE employees (
     first TEXT,
@@ -11,9 +11,6 @@ cursor.execute("""
     salary INTEGER
     )     
     """)
-'''
-
-
 
 connection.commit()
 connection.close

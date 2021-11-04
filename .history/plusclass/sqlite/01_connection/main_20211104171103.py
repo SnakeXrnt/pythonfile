@@ -11,9 +11,6 @@ cursor.execute("""
     salary INTEGER
     )     
     """)
-'''
-
-
 
 connection.commit()
 connection.close
