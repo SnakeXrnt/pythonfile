@@ -14,8 +14,7 @@ class App:
             )                                              
             """)
 
-    def insert_emp(self,emp):
-        self.settings.CUR.excute('INSERT INTO employees VALUES (:first,:last,:salary)',{'first':emp.first,'last':emp.last,'salary':emp.salary})
+    def insert_emp(self,emp
     
     def mainloop(self):
         
