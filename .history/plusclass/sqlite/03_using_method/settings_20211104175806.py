@@ -12,5 +12,5 @@ class Settings:
 (3) FIND EMPLOYEE BY NAME 
 (4) UPDATE SALARY EMPLOYEE 
 (5) REMOVE EMPLOYEE 
-(Q) EXIT.  
+()  
 """
