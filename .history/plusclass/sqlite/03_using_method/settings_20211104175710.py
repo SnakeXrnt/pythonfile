@@ -7,9 +7,5 @@ class Settings:
     CUr = CONN.cursor()
     
     MENU = """
-(1) SHOW ALL EMPLOYEES 
-(2) ADD NEW EMPLOYEE 
-(3) FIND EMPLOYEE BY NAME 
-(4) UPDATE SALARY EMPLOYEE 
-()  
+(1) SHOW ALL EMP    
 """
