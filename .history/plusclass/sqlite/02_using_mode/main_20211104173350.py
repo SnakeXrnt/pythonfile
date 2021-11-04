@@ -18,5 +18,3 @@ cur.execute("""
     salary INTEGER
     )
     """)
-
-CONN.COMMIT

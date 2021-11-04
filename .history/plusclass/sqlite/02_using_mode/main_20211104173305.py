@@ -12,11 +12,4 @@ emp1 = Employee('Anas1','Azhar1',300000)
 emp2 = Employee('Anas2','Azhar2',300000)
 
 cur.execute("""
-    CREATE TABLE IF NOT EXISTS employees (
-    first TEXT,
-    last TEXT,
-    salary INTEGER
     )
-    """)
-
-CONN.COMMIT

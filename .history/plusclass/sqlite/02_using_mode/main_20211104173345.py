@@ -15,8 +15,6 @@ cur.execute("""
     CREATE TABLE IF NOT EXISTS employees (
     first TEXT,
     last TEXT,
-    salary INTEGER
+    s
     )
     """)
-
-CONN.COMMIT
