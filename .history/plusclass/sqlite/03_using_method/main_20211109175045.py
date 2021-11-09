@@ -39,7 +39,7 @@ class App:
             elif option == '1':
                 system('cls')
                 emps = self.get_all_emps()
-                print(emps)
+                print(u)
                 input('Press Enter to Return')
                 
         self.settings.CONN.close()

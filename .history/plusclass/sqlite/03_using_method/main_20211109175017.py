@@ -38,9 +38,9 @@ class App:
                 break
             elif option == '1':
                 system('cls')
-                emps = self.get_all_emps()
-                print(emps)
-                input('Press Enter to Return')
+                users = self.get_all_emps()
+                print(users)
+                
                 
         self.settings.CONN.close()
 

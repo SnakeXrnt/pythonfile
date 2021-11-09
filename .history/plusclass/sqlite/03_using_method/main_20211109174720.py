@@ -13,12 +13,6 @@ class App:
             salary INTEGER
             )                                              
             """)
-    
-    def get_all_emps(self):
-        with self.settings.CONN:
-            self.settings.CUR.execute('SELECT * FROM employees ORDER BY first')
-        return self.settings.CUR.fetchall()
-    
 
 #    def insert_emp(self,emp):
 #        self.settings.CUR.excute('INSERT INTO employees VALUES (:first,:last,:salary)',{'first':emp.first,'last':emp.last,'salary':emp.salary})
@@ -36,12 +30,7 @@ class App:
             if option == 'q':
                 print('Thanks')
                 break
-            elif option == '1':
-                system('cls')
-                emps = self.get_all_emps()
-                print(emps)
-                input('Press Enter to Return')
-                
+            e
         self.settings.CONN.close()
 
 if __name__ == '__main__':

@@ -16,9 +16,7 @@ class App:
     
     def get_all_emps(self):
         with self.settings.CONN:
-            self.settings.CUR.execute('SELECT * FROM employees ORDER BY first')
-        return self.settings.CUR.fetchall()
-    
+            self
 
 #    def insert_emp(self,emp):
 #        self.settings.CUR.excute('INSERT INTO employees VALUES (:first,:last,:salary)',{'first':emp.first,'last':emp.last,'salary':emp.salary})
@@ -38,9 +36,7 @@ class App:
                 break
             elif option == '1':
                 system('cls')
-                emps = self.get_all_emps()
-                print(emps)
-                input('Press Enter to Return')
+                users = #SELECT
                 
         self.settings.CONN.close()
 
