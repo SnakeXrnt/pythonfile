@@ -26,12 +26,8 @@ class App:
     
     def update_salary(self,new_salary):
         with self.settings.CONN:
-            self.settings.CUR.execute('UPDATE employees SET salary=:salary WHERE first=:first' , {'salary': new_salary,'first':emp.first})  
-    
-    def remove_emp(self,emp):
-        with self.settings.CONN:
-            self.settings.CUR.execute('DELETE FROM employees WHERE first=:first AND last=:last',{'first':emp.first,'last':emp.last})
-            
+            self.settings.CUR.execute('UPDATE employees SET salary =:salary WHERE first=:first , {'salary': new_salary,'first':emp.first)  
+                
 
 #    def insert_emp(self,emp):
 #        self.settings.CUR.excute('INSERT INTO employees VALUES (:first,:last,:salary)',{'first':emp.first,'last':emp.last,'salary':emp.salary})
