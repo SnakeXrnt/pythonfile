@@ -20,8 +20,7 @@ class App:
         return self.settings.CUR.fetchall()
     
     def find_emp(self,first):
-        with self.settings.CONN:
-            self.settings.CUR.execute('SELECT * FROM employees WHERE fir')    
+        with self.seyy    
 
 #    def insert_emp(self,emp):
 #        self.settings.CUR.excute('INSERT INTO employees VALUES (:first,:last,:salary)',{'first':emp.first,'last':emp.last,'salary':emp.salary})
