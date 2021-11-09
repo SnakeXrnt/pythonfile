@@ -22,7 +22,7 @@ class App:
     def find_emp(self,first):
         with self.settings.CONN:
             self.settings.CUR.execute('SELECT * FROM employees WHERE first=:first',{'first':first})
-        return self.settings.CUR.fetchone()    
+        return self.settings.CUR.fe    
 
 #    def insert_emp(self,emp):
 #        self.settings.CUR.excute('INSERT INTO employees VALUES (:first,:last,:salary)',{'first':emp.first,'last':emp.last,'salary':emp.salary})
