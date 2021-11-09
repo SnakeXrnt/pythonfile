@@ -47,10 +47,8 @@ class App:
                 first = input('First : ')
                 last = input('Last : ')
                 salary = int(input('Salary : '))
-                emp = Employee(first , last , salary)
-                self.insert_mp(emp)
-                print('Done Saving the file ')
-                input('Press enter to go back to HOME menu')                
+                emp = Employe
+                
         self.settings.CONN.close()
 
 if __name__ == '__main__':
