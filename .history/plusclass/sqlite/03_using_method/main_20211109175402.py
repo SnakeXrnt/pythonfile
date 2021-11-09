@@ -46,11 +46,8 @@ class App:
                 system('cls')
                 first = input('First : ')
                 last = input('Last : ')
-                salary = int(input('Salary : '))
-                emp = Employee(first , last , salary)
-                self.insert_mp(emp)
-                print('Done Saving the file ')
-                inpt                
+                
+                
         self.settings.CONN.close()
 
 if __name__ == '__main__':
