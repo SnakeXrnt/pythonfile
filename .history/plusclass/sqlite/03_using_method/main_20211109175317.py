@@ -44,8 +44,6 @@ class App:
             
             elif option == '2':
                 system('cls')
-                first = input('First : ')
-                last = in
                 
         self.settings.CONN.close()
 

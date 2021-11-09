@@ -43,9 +43,7 @@ class App:
                 input('Press Enter to Return')
             
             elif option == '2':
-                system('cls')
-                first = input('First : ')
-                last = in
+                
                 
         self.settings.CONN.close()
 

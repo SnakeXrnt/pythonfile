@@ -41,11 +41,7 @@ class App:
                 emps = self.get_all_emps()
                 print(emps)
                 input('Press Enter to Return')
-            
-            elif option == '2':
-                system('cls')
-                first = input('First : ')
-                last = in
+                
                 
         self.settings.CONN.close()
 
