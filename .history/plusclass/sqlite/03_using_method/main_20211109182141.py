@@ -73,7 +73,7 @@ class App:
                     print(res)
                 else:
                     print('Nothing!')
-                input('Press ENTER to go back to main menu')
+                input('Press ')
                     
                 
                 

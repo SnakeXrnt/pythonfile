@@ -71,9 +71,7 @@ class App:
                 res = self.find_emp(first)
                 if res:
                     print(res)
-                else:
-                    print('Nothing!')
-                input('Press ENTER to go back to main menu')
+                else
                     
                 
                 

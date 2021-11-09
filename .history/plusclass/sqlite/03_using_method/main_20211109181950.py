@@ -65,16 +65,9 @@ class App:
                 print('Done Saving the file ')
                 input('Press enter to go back to HOME menu')      
                 
-            elif option == '3':
+            elif option == '2':
                 system('cls')
-                first = input()
-                res = self.find_emp(first)
-                if res:
-                    print(res)
-                else:
-                    print('Nothing!')
-                input('Press ENTER to go back to main menu')
-                    
+                first = input
                 
                 
                           
