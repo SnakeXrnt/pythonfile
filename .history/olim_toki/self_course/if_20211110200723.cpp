@@ -10,9 +10,7 @@ int main() {
         cout << "ya benar ini 10\n";
     } else if (a < 10) {
         cout << "angka nya kekecilan\n";
-    } else if (a > 10) {
-        cout << "angkanya kebesaran\n";
-    }
+    } else if (a > 1)
 
     cout << "selesai\n";
 }

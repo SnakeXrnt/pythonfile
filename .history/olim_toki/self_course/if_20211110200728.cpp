@@ -11,7 +11,7 @@ int main() {
     } else if (a < 10) {
         cout << "angka nya kekecilan\n";
     } else if (a > 10) {
-        cout << "angkanya kebesaran\n";
+        
     }
 
     cout << "selesai\n";
