@@ -9,5 +9,5 @@ int main() {
     x = 2;
 
     hasil = a*x*x + b*x + c ;
-    printf("ax^2 + bx + c = %d\n", hasil);
+    
 }
