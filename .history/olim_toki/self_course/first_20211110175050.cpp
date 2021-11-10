@@ -4,10 +4,9 @@ using namespace std;
 int a , b , c ;
 
 int main() {
-    cout << "Hello World\n";
-    cin >> a >> b ;
-    c = a + b ;
-    cout << c ;
+    cout << "Hello World";
+    cin << a << b 
+    
 
     return 0;
 }
