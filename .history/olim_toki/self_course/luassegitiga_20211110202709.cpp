@@ -6,5 +6,5 @@ float a , t , h ;
 int main (){
     cin >> a >> t;
     h = a*t/2;
-    printf("%.2f\n",h);
+    printf("%.2f\n",luas);
 }
