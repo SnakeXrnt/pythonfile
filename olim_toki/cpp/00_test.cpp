@@ -1,12 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int N , M , a , b ;
+int n ,m, a , b ;
 
 int main() {
-    cin >> N >> M ;
-    a = N / M ;
-    b = N%M ;
+    cin >> n >> m;
+
+    a = n / m;
+    b = n % m;
 
     cout << "masing-masing " << a << "\n";
     cout << "sisa " << b;
