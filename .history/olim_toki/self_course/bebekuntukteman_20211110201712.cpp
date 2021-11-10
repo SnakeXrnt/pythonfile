@@ -3,7 +3,7 @@ using namespace std;
 
 int N , M , a , b ;
 
-int main() {
+int mia(){
     cin >> N >> M ;
     a = N / M ;
     b = N % M ;
