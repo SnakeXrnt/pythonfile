@@ -6,5 +6,6 @@ float a , t , h ;
 int main (){
     cin >> a >> t;
     h = a*t/2;
-    cout << setprecision(3) << h;
+    cout << setprecision(3);
+    cout << h;
 }
