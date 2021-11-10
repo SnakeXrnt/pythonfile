@@ -8,9 +8,7 @@ int main() {
     cin >> a;
     if(a == 10) {
         cout << "ya benar ini 10\n";
-    } else {
-        cout << "angka nya adalah angka 10\n";
-    }
+    } else 
 
     cout << "selesai\n";
 }

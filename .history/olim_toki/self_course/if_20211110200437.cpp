@@ -9,7 +9,7 @@ int main() {
     if(a == 10) {
         cout << "ya benar ini 10\n";
     } else {
-        cout << "angka nya adalah angka 10\n";
+        cout << "angka nya"
     }
 
     cout << "selesai\n";
