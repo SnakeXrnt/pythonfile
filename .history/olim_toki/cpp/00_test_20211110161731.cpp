@@ -9,5 +9,5 @@ int main() {
     b = N%M ;
 
     printf("masing-masing  %a",a);
-    printf("bersisa %b",b);
+    printf("bersisa %b",b)
 }
