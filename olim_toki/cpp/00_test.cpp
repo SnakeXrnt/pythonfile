@@ -8,6 +8,6 @@ int main() {
     a = N / M ;
     b = N%M ;
 
-    printf("masing-masing  %a\n",a);
-    printf("bersisa %b\n",b);
+    cout << "masing-masing " << a << "\n";
+    cout << "sisa " << b;
 }
