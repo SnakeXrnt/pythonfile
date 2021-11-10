@@ -6,8 +6,5 @@ int main() {
     a = 1 ;
     b = 3 ;
     c = -2 ;
-    x = 2;
-
-    hasil = a*x*x + b*x + c ;
-    cout << hasil ;
+    x 
 }
