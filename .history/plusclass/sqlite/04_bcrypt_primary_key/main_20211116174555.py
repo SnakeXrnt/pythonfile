@@ -51,14 +51,7 @@ class App:
 				first, last, salary = input().split()
 				emp = Employee(first, last, salary)
 
-				password = input('Enter new Password : ')
-				repassword = input('ReEnter new password : ')
-
-				while password != repassword:
-					print("Password does't match")
-				else: 
-					emp.password = bycrypt.hashpw(password.encode('utf-8'))
-     
+			
 				self.insert_emp(emp)
 				print("DONE!!")
 				input("Press Enter to Return")

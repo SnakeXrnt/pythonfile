@@ -55,10 +55,7 @@ class App:
 				repassword = input('ReEnter new password : ')
 
 				while password != repassword:
-					print("Password does't match")
-				else: 
-					emp.password = bycrypt.hashpw(password.encode('utf-8'))
-     
+					print('Password')
 				self.insert_emp(emp)
 				print("DONE!!")
 				input("Press Enter to Return")
