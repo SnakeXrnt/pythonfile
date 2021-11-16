@@ -57,7 +57,7 @@ class App:
 				while password != repassword:
 					print("Password does't match")
 				else: 
-					emp.password = bycrypt.hashpw(password.encode('utf-8'),bycrypt.getsalt())
+					emp.password = bycrypt.
      
 				self.insert_emp(emp)
 				print("DONE!!")
