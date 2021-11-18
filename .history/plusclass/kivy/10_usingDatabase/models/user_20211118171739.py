@@ -7,6 +7,3 @@ class User:
         self.password = None
         self.first = first
         self.last = last 
-        self.bio = ""
-        self.interest = ""
-        self.pic = 'default.png'

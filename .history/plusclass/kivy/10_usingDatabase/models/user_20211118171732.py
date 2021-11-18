@@ -5,8 +5,4 @@ class User:
         self.id = None
         self.username = username 
         self.password = None
-        self.first = first
-        self.last = last 
-        self.bio = ""
-        self.interest = ""
-        self.pic = 'default.png'
+        self.first

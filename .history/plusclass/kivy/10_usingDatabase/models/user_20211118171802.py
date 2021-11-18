@@ -9,4 +9,4 @@ class User:
         self.last = last 
         self.bio = ""
         self.interest = ""
-        self.pic = 'default.png'
+        self.p
