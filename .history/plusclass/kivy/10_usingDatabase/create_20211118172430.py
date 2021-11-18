@@ -11,5 +11,5 @@ def main():
         CREATE TABLE IF NOT EXISTS username (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             username TEST NOT NULL UNIQUE,
-            )
+            password)
         """)

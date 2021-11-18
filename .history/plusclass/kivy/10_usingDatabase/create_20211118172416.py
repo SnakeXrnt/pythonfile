@@ -10,6 +10,5 @@ def main():
     settings.cur.execute("""
         CREATE TABLE IF NOT EXISTS username (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            username TEST NOT NULL UNIQUE,
-            )
+            username TEST NOT NULL )
         """)
