@@ -44,7 +44,7 @@ def main():
             "last" : admin.last
             })
         settings.conn.commit()
-        print('Done ...')
+        print
     
 if __name__ == '__main__':
     main()
