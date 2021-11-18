@@ -18,12 +18,7 @@ def main():
             pic TEXT DEFAULT "default.png" NOT NULL)
         """) #DOC STRING/ comment 
     settings.cur,execute ("""SELECT * FROM user WHERE username = 'admin' """)
-    admin = settings.fetchone()
-    
-    if not admin:
-        pass
-    else:
-        print('admin already exists')
+    admin = settings.
     
 if __name__ == '__main__':
     main()

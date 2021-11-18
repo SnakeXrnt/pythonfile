@@ -23,7 +23,7 @@ def main():
     if not admin:
         pass
     else:
-        print('admin already exists')
+        print('admin alr')
     
 if __name__ == '__main__':
     main()

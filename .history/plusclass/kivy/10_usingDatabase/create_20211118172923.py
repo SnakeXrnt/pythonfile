@@ -20,10 +20,6 @@ def main():
     settings.cur,execute ("""SELECT * FROM user WHERE username = 'admin' """)
     admin = settings.fetchone()
     
-    if not admin:
-        pass
-    else:
-        print('admin already exists')
     
 if __name__ == '__main__':
     main()

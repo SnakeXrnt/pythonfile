@@ -11,19 +11,9 @@ def main():
         CREATE TABLE IF NOT EXISTS username (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             username TEST NOT NULL UNIQUE,
-            first TEXT NOT NULL,
-            last TEXT NOT NULL,
-            bio TEXT DEFAULT "" NOT NULL,
-            intrest TEXT DEFAULT "" NOT NULL,
-            pic TEXT DEFAULT "default.png" NOT NULL)
+            f
+            )
         """) #DOC STRING/ comment 
-    settings.cur,execute ("""SELECT * FROM user WHERE username = 'admin' """)
-    admin = settings.fetchone()
-    
-    if not admin:
-        pass
-    else:
-        print('admin already exists')
     
 if __name__ == '__main__':
     main()
