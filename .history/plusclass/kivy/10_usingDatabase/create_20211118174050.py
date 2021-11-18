@@ -33,7 +33,7 @@ def main():
             attempts += 1
             retype_password = getpass('Retype \nPassword')
     else:
-        admin.password = bycrypt.hashpw(password.encode('utf-8'),bcrypt)
+        admin.password 
     
 if __name__ == '__main__':
     main()

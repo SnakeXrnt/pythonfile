@@ -26,14 +26,11 @@ def main():
         retypr_password = getpass('ReType Newly Made Admin Password \nPassword : ')
         attempts = 0
         while retype_password != password:
-            if attempts == 3:
-                print('Limit exceeded, please try again.')
-                break
             print("password doestn't match")
             attempts += 1
-            retype_password = getpass('Retype \nPassword')
+            retype_password = getpass('Retype \')
     else:
-        admin.password = bycrypt.hashpw(password.encode('utf-8'),bcrypt)
+        print('admin already exists')
     
 if __name__ == '__main__':
     main()
