@@ -36,13 +36,8 @@ def main():
         admin.password = bycrypt.hashpw(password.encode('utf-8'),bycrypt.getsalt())
         settings.cur.execute("""
             INSERT INTO users (username,password,first,last)
-            VALUES (:username, :password, :first , :last)
-            """,{
-            "usermane" : admin.username,
-            "password" : admin.password,
-            "first" : admin.first,
-            "last" : admin.last
-            })
+            VALUES (:username, :password, :first)
+            """)
     
 if __name__ == '__main__':
     main()

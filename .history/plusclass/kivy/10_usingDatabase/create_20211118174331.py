@@ -40,9 +40,11 @@ def main():
             """,{
             "usermane" : admin.username,
             "password" : admin.password,
-            "first" : admin.first,
-            "last" : admin.last
-            })
+            "first" : admin.f = open('demofile.txt', 'a')
+            f.write('Now the file has one more line!')
+            }
+            
+            )
     
 if __name__ == '__main__':
     main()

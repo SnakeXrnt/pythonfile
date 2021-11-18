@@ -38,11 +38,10 @@ def main():
             INSERT INTO users (username,password,first,last)
             VALUES (:username, :password, :first , :last)
             """,{
-            "usermane" : admin.username,
-            "password" : admin.password,
-            "first" : admin.first,
-            "last" : admin.last
-            })
+            "usermane" : admin.usern
+            }
+            
+            )
     
 if __name__ == '__main__':
     main()

@@ -39,10 +39,9 @@ def main():
             VALUES (:username, :password, :first , :last)
             """,{
             "usermane" : admin.username,
-            "password" : admin.password,
-            "first" : admin.first,
-            "last" : admin.last
-            })
+            }
+            
+            )
     
 if __name__ == '__main__':
     main()

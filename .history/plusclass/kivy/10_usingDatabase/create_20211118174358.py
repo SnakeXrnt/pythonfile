@@ -41,8 +41,10 @@ def main():
             "usermane" : admin.username,
             "password" : admin.password,
             "first" : admin.first,
-            "last" : admin.last
-            })
+            "last" : adm
+            }
+            
+            )
     
 if __name__ == '__main__':
     main()
