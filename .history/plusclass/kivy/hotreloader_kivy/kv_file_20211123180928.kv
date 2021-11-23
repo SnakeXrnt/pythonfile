@@ -23,7 +23,7 @@ MDScreen:
                             icon:"magnify"
                         MDIconButton:
                             icon:"cart"
-        
+            
         MDBoxLayout:
             ScrollView:
                 MDGridLayout:
@@ -56,7 +56,51 @@ MDScreen:
                         price:'200 $'
                         rate:" 3.0/5"
         # bottom navigation appbar
-       
+        MDBoxLayout:
+            size_hint_y:None
+            md_bg_color:.9,.9,.9,1
+            height:dp(60)
+            padding:[0,0,0,15]
+            MDBoxLayout:
+                orientation:'vertical'
+                MDIconButton:
+                    pos_hint:{'center_x':.5,'center_y':.5}
+                    icon:'home'
+                    theme_text_color:'Custom'
+                    text_color:app.theme_cls.primary_color
+                MDLabel:
+                    text:'Home'
+                    valign:"center"
+                    theme_text_color:'Custom'
+                    text_color:app.theme_cls.primary_color
+                    halign:"center"
+            MDBoxLayout:
+                orientation:'vertical'
+                MDIconButton:
+                    pos_hint:{'center_x':.5,'center_y':.5}
+                    icon:'bell'
+                MDLabel:
+                    text:'Notification'
+                    valign:"center"
+                    halign:"center"
+            MDBoxLayout:
+                orientation:'vertical'
+                MDIconButton:
+                    pos_hint:{'center_x':.5,'center_y':.5}
+                    icon:'cards-heart'
+                MDLabel:
+                    text:'Favorite'
+                    valign:"center"
+                    halign:"center"
+            MDBoxLayout:
+                orientation:'vertical'
+                MDIconButton:
+                    pos_hint:{'center_x':.5,'center_y':.5}
+                    icon:'account'
+                MDLabel:
+                    text:'Profile'
+                    valign:"center"
+                    halign:"center"
 
 <ContentCustomSheet@MDBoxLayout>:
     orientation: "vertical"
