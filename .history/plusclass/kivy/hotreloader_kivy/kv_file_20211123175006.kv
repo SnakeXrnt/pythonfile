@@ -32,13 +32,13 @@ MDScreen:
             ElementCard:
                 image:"asset/illus/warehouse.png"
                 text:"Stock Barang"
-                subtext:""
+                subtext:"Stock barang yang ada"
 
 
             ElementCard:
                 image:"asset/illus/food.png"
                 text:"Groceries"
-                subtext:""
+                subtext:"Broccoli, Apple"
 
 
             ElementCard:
@@ -51,19 +51,19 @@ MDScreen:
                 image:"asset/illus/festival.png"
                 text:"Activity"
                 items_count:""
-
+                subtext:"Rose favorite your Post"
 
             ElementCard:
                 image:"asset/illus/todo.png"
                 text:"To Do"
                 subtext:"Homework, Design"
-
+                items_count:"4 Items"
 
             ElementCard:
                 image:"asset/illus/setting.png"
                 text:"Setting"
                 subtext:""
-
+                items_count:"4 Items"
 
 
 <ElementCard@MDCard>:
@@ -74,6 +74,7 @@ MDScreen:
     ripple_behavior: True
     image:''
     text:""
+    items_count:""
     subtext:''
 
     orientation:'vertical'
@@ -89,7 +90,9 @@ MDScreen:
             halign:"center"
             font_style:"Caption"
             text:root.subtext
-
+        MDLabel:
+            halign:"center"
+            text:root.items_count
         
 
     

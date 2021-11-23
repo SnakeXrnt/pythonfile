@@ -32,13 +32,13 @@ MDScreen:
             ElementCard:
                 image:"asset/illus/warehouse.png"
                 text:"Stock Barang"
-                subtext:""
+                subtext:"Stock barang yang ada"
 
 
             ElementCard:
                 image:"asset/illus/food.png"
                 text:"Groceries"
-                subtext:""
+                subtext:"Broccoli, Apple"
 
 
             ElementCard:
@@ -74,6 +74,7 @@ MDScreen:
     ripple_behavior: True
     image:''
     text:""
+    items_count:""
     subtext:''
 
     orientation:'vertical'
@@ -89,7 +90,9 @@ MDScreen:
             halign:"center"
             font_style:"Caption"
             text:root.subtext
-
+        MDLabel:
+            halign:"center"
+            text:root.items_count
         
 
     
