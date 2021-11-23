@@ -100,25 +100,7 @@ Screen:
 			icon: 'google'
 			text: "Google"
 			size_hint: .3 , .06
-			pos_hint: {"center_x": .2, "center_y": .14}
-			background_color: 0,0,0,0
-			font_name: "Roboto"
-			font_size: "18sp"
-			bold: True
-			canvas.before:
-				Color:
-					rgba: rgba(107, 127, 214, 255)
-				RoundedRectangle:
-					size: self.size
-					pos: self.pos
-					radius:[25]
-			on_press: app.logger()
-
-		MDFillRoundFlatIconButton:
-			icon: 'facebook'
-			text: "Facebook"
-			size_hint: .37 , .06
-			pos_hint: {"center_x": .75, "center_y": .14}
+			pos_hint: {"center_x": .4, "center_y": .18}
 			background_color: 0,0,0,0
 			font_name: "Roboto"
 			font_size: "18sp"
