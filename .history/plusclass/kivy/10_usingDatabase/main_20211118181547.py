@@ -49,35 +49,20 @@ class MyApp(MDApp):
 
 	
 	def logger(self):
-			username_entry = self.root.screens[1].ids['username_entry'].text
-			password_entry = self.root.screens[1].ids['password_entry'].text
+		username_entry = self.root.screens[1].ids['username_entry'].text
+		password_entry = self.root.screens[1].ids['password_entry'].text
+		
+		if username_entry in self.users:
+			if self.users[username_entry]['password'] == password_entry:
+				self.root.screens[1].ids['msg'].text = ''
+				self.root.screens[1].ids['username_entry'].text = ''
+				self.root.screens[1].ids['password_entry'].text = ''
+				self.to_dashboard()
+				return True
 
-			user = self.find_user_by_username(username_entry)
-
-			if user:
-				#print(bcrypt.checkpw(password_entry.encode("utf-8"), user[2]))
-				if bcrypt.checkpw(password_entry.encode("utf-8"), user[2]):
-					self.root.screens[1].ids['msg'].text = ""
-					self.root.screens[1].ids['username_entry'].text = ""
-					self.root.screens[1].ids['password_entry'].text = ""
-
-					self.current_user = User(user[1], user[3], user[4])
-					self.current_user.id = user[0]
-					self.current_user.bio = user[5]
-					self.current_user.interest = user[6]
-					self.current_user.pic = user[7]
-
-					print("ok")
-					self.to_dashboard()
-					return True
-				else:
-					print("Nope")
-
-			self.root.screens[1].ids['msg'].text = "Login Gagal"
-			self.root.screens[1].ids['username_entry'].text = ""
-			self.root.screens[1].ids['password_entry'].text = ""
-			print("Not ok")
-
+		self.root.screens[1].ids['msg'].text = 'Login Gagal'
+		self.root.screens[1].ids['username_entry'].text = ''
+		self.root.screens[1].ids['password_entry'].text = ''
 
 
 	def load_data(self,file_location):
@@ -90,9 +75,8 @@ class MyApp(MDApp):
 	def find_user_by_username(self , username):
 		with self.settings.conn:
 			self.settings.cur.execute("""
-				SELECT * FROM users WHERE username=:username
-                """,{'username':username})
-		return self.settings.cur.fetchone()
+				SELECT * FROM users WHER
+                """)
 
 	def build(self):
 		self.screen_manager.current = "splash"

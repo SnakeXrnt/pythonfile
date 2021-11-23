@@ -48,35 +48,35 @@ class MyApp(MDApp):
 		self.screen_manager.add_widget(Builder.load_file("pages/dashboard.kv"))
 
 	
-	def logger(self):
-			username_entry = self.root.screens[1].ids['username_entry'].text
-			password_entry = self.root.screens[1].ids['password_entry'].text
+def logger(self):
+		username_entry = self.root.screens[1].ids['username_entry'].text
+		password_entry = self.root.screens[1].ids['password_entry'].text
 
-			user = self.find_user_by_username(username_entry)
+		user = self.find_user_by_username(username_entry)
 
-			if user:
-				#print(bcrypt.checkpw(password_entry.encode("utf-8"), user[2]))
-				if bcrypt.checkpw(password_entry.encode("utf-8"), user[2]):
-					self.root.screens[1].ids['msg'].text = ""
-					self.root.screens[1].ids['username_entry'].text = ""
-					self.root.screens[1].ids['password_entry'].text = ""
+		if user:
+			#print(bcrypt.checkpw(password_entry.encode("utf-8"), user[2]))
+			if bcrypt.checkpw(password_entry.encode("utf-8"), user[2]):
+				self.root.screens[1].ids['msg'].text = ""
+				self.root.screens[1].ids['username_entry'].text = ""
+				self.root.screens[1].ids['password_entry'].text = ""
 
-					self.current_user = User(user[1], user[3], user[4])
-					self.current_user.id = user[0]
-					self.current_user.bio = user[5]
-					self.current_user.interest = user[6]
-					self.current_user.pic = user[7]
+				self.current_user = User(user[1], user[3], user[4])
+				self.current_user.id = user[0]
+				self.current_user.bio = user[5]
+				self.current_user.interest = user[6]
+				self.current_user.pic = user[7]
 
-					print("ok")
-					self.to_dashboard()
-					return True
-				else:
-					print("Nope")
+				print("ok")
+				self.to_dashboard()
+				return True
+			else:
+				print("Nope")
 
-			self.root.screens[1].ids['msg'].text = "Login Gagal"
-			self.root.screens[1].ids['username_entry'].text = ""
-			self.root.screens[1].ids['password_entry'].text = ""
-			print("Not ok")
+		self.root.screens[1].ids['msg'].text = "Login Gagal"
+		self.root.screens[1].ids['username_entry'].text = ""
+		self.root.screens[1].ids['password_entry'].text = ""
+		print("Not ok")
 
 
 
