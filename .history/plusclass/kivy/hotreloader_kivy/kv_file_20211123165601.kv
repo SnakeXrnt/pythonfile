@@ -96,19 +96,3 @@ Screen:
 					radius:[25]
 			on_press: app.logger()
 
-		MDIconButton:
-			text: "Google"
-			size_hint: .5, .06
-			pos_hint: {"center_x": .5, "center_y": .18}
-			background_color: 0,0,0,0
-			font_name: "Roboto"
-			font_size: "18sp"
-			bold: True
-			canvas.before:
-				Color:
-					rgba: rgba(107, 127, 214, 255)
-				RoundedRectangle:
-					size: self.size
-					pos: self.pos
-					radius:[25]
-			on_press: app.logger()

@@ -80,26 +80,9 @@ Screen:
 				md_bg_color: rgba(107, 127, 214, 255)
 
 		Button:
-			text: "Enter Application"
-			size_hint: .45, .08
-			pos_hint: {"center_x": .5, "center_y": .28}
-			background_color: 0,0,0,0
-			font_name: "Roboto"
-			font_size: "18sp"
-			bold: True
-			canvas.before:
-				Color:
-					rgba: rgba(107, 127, 214, 255)
-				RoundedRectangle:
-					size: self.size
-					pos: self.pos
-					radius:[25]
-			on_press: app.logger()
-
-		MDIconButton:
-			text: "Google"
-			size_hint: .5, .06
-			pos_hint: {"center_x": .5, "center_y": .18}
+			text: "Masuk"
+			size_hint: .4, .08
+			pos_hint: {"center_x": .5, "center_y": .2}
 			background_color: 0,0,0,0
 			font_name: "Roboto"
 			font_size: "18sp"
