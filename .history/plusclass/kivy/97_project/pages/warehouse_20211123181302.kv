@@ -1,0 +1,7 @@
+    def show_custom_bottom_sheet(self,image,price,rate):
+        bottom_sheet=Factory.ContentCustomSheet()
+        bottom_sheet.rate=rate
+        bottom_sheet.image=image
+        bottom_sheet.price=price
+        self.custom_sheet = MDCustomBottomSheet(screen=bottom_sheet)
+        self.custom_sheet.open()
