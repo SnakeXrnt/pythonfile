@@ -26,7 +26,7 @@ BoxLayout:
 
 
 class Example(MDApp):
-    path_to_kv_file = "warehouse.kv"
+    path_to_kv_file = "wareh.kv"
 
     def build(self):
         self.theme_cls.theme_style = "Light"
@@ -36,5 +36,12 @@ class Example(MDApp):
         with open(self.path_to_kv_file, "w") as kv_file:
             kv_file.write(text)
             
+    def show_custom_bottom_sheet(self,image,price,rate):
+        bottom_sheet=Factory.ContentCustomSheet()
+        bottom_sheet.rate=rate
+        bottom_sheet.image=image
+        bottom_sheet.price=price
+        self.custom_sheet = MDCustomBottomSheet(screen=bottom_sheet)
+        self.custom_sheet.open()
 
 Example().run()
