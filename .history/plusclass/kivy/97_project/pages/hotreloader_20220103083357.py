@@ -26,7 +26,7 @@ BoxLayout:
 
 
 class Example(MDApp):
-    path_to_kv_file = "splash.kv"
+    path_to_kv_file = "daashbo.kv"
 
     def build(self):
         self.theme_cls.theme_style = "Light"
@@ -35,5 +35,6 @@ class Example(MDApp):
     def update_kv_file(self, text):
         with open(self.path_to_kv_file, "w") as kv_file:
             kv_file.write(text)
+            
 
 Example().run()
