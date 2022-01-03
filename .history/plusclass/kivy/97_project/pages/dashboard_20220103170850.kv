@@ -36,7 +36,25 @@ Screen:
 		pos_hint: {"center_x":1.2, "center_y":.795}
 		color: rgba(255,255,255, 255)
 	
-	
+	MDNavigationLayout:
+
+        ScreenManager:
+
+            MDScreen:
+
+                MDToolbar:
+                    title: "Password Saver"
+                    elevation: 10
+                    pos_hint: {"top": 1}
+                    md_bg_color: rgba(35, 57, 93,255)
+                    specific_text_color: rgba(255,26)
+                    left_action_items:
+                        [['menu', lambda x: nav_drawer.set_state("open")]]
+
+
+        MDNavigationDrawer:
+            id: nav_drawer
+            md_bg_color: get_color_from_hex("#f7f4e7")
 
 	MDFillRoundFlatButton:
 		md_bg_color: rgba(8, 44, 108,255)
@@ -145,23 +163,3 @@ Screen:
 		font_size : '20sp'
 		pos_hint: {"center_x":.5, "center_y":.05}
 		color: rgba(255,255,255, 255)	
-
-	MDNavigationLayout:
-
-        ScreenManager:
-
-            MDScreen:
-
-                MDToolbar:
-                    title: "Password Saver"
-                    elevation: 10
-                    pos_hint: {"top": 1}
-                    md_bg_color: rgba(35, 57, 93,255)
-                    specific_text_color: rgba(255,255,255,255)
-                    left_action_items:
-                        [['menu', lambda x: nav_drawer.set_state("open")]]
-
-
-        MDNavigationDrawer:
-            id: nav_drawer
-            md_bg_color: rgba(25, 40, 65,255)
