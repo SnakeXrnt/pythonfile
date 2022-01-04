@@ -36,8 +36,8 @@ class MyApp(MDApp):
   
 	def to_login_page(self, *args):
 		self.screen_manager.current = "login"
-	def to_home_page(self, *args):
-		self.screen_manager.current = "dashboard"
+		def to_login_page(self, *args):
+		self.screen_manager.current = "login"
   
 	def logger(self):
 		username_entry = self.root.screens[1].ids['username_entry'].text

@@ -26,7 +26,7 @@ BoxLayout:
 
 
 class Example(MDApp):
-    path_to_kv_file = "add.kv"
+    path_to_kv_file = "ad.kv"
 
     def build(self):
         self.theme_cls.theme_style = "Light"
