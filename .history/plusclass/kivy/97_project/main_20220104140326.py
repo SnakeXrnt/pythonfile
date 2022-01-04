@@ -33,9 +33,7 @@ class MyApp(MDApp):
 
 	def on_start(self):
 		Clock.schedule_once(self.to_login_page, 3)
-  
-	def to_login_page(self, *args):
-		self.screen_manager.current = "login"
+
   
 
 if __name__ == '__main__':

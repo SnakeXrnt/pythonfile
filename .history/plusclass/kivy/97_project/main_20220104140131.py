@@ -18,6 +18,7 @@ class MyApp(MDApp):
 		super().__init__()
 		self.title = "My KIVY MD APP"
 
+		self.users= self.load_data('data/users.json')
 		self.current_user= None
 		self.dialog_box = None
 
@@ -25,20 +26,4 @@ class MyApp(MDApp):
 		self.screen_manager.add_widget(Builder.load_file("pages/splash.kv"))
 		self.screen_manager.add_widget(Builder.load_file("pages/login.kv"))
 		self.screen_manager.add_widget(Builder.load_file("pages/dashboard.kv"))
-		self.screen_manager.add_widget(Builder.load_file("pages/passviewer.kv"))
-
-	def build(self):
-		self.screen_manager.current = "splash"
-		return self.screen_manager
-
-	def on_start(self):
-		Clock.schedule_once(self.to_login_page, 3)
-  
-	def to_login_page(self, *args):
-		self.screen_manager.current = "login"
-  
-
-if __name__ == '__main__':
-	app = MyApp()
-	app.run()
- 
+  self.screen_manager.add_widget(Builder.load_file("pages/dashboard.kv"))
