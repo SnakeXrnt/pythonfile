@@ -40,10 +40,7 @@ class MyApp(MDApp):
 	def logger(self):
 		username_entry = self.root.screens[1].ids['username_entry'].text
 		password_entry = self.root.screens[1].ids['password_entry'].text
-		if username_entry == password_entry:
-			self.screen_manager.current = "dashboard"
-		else:
-			pass
+		if username_entry == password_entry
 
   
 

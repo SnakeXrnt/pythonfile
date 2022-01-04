@@ -43,7 +43,6 @@ class MyApp(MDApp):
 		if username_entry == password_entry:
 			self.screen_manager.current = "dashboard"
 		else:
-			pass
 
   
 
