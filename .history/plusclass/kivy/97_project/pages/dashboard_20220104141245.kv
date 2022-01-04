@@ -146,25 +146,8 @@ Screen:
 		pos_hint: {"center_x":.5, "center_y":.05}
 		color: rgba(255,255,255, 255)	
 
-	MDNavigationLayout:
-
-        ScreenManager:
-
-            MDScreen:
-
-                MDToolbar:
-                    title: "Password Saver"
-                    elevation: 10
-                    pos_hint: {"top": 1}
-                    md_bg_color: rgba(35, 57, 93,255)
-                    specific_text_color: rgba(255,255,255,255)
-                    left_action_items:
-                        [['menu', lambda x: nav_drawer.set_state("open")]]
-
 
         MDNavigationDrawer:
             md_bg_color: rgba(25, 40, 65,255)
-	MDIconButton:
-		icon: 'logout'
-		pos_hint: {"center_x":1.17, "center_y":.25}
-
+		MDIconButton:
+			icon: 'logout'
