@@ -1,0 +1,52 @@
+#:import get_color_from_hex kivy.utils.get_color_from_hex
+
+
+Screen:
+	name: "settings"
+	MDFloatLayout:
+		md_bg_color: rgba(21, 34, 56,255)
+
+    MDFloatLayout:
+			size_hint: 1, .33
+			pos_hint: {"center_y": .75}
+			md_bg_color: 1,1,1,1
+
+			MDLabel:
+				id: label_username
+				text: ""
+				font_name: "Roboto"
+				font_size: "16sp"
+				halign: "left"
+				pos_hint: {"center_x": .58,"center_y": .9}
+				#x: root.ids.layout0.x + 35
+				color: rgba(202, 0, 13, 255)
+				bold: True
+
+			Image:
+				id: profile_pic
+				source: "assets/img/win.png"
+				size_hint_y: .2
+				pos_hint: {"center_x":.5, "center_y": .2}
+				canvas.before:
+					Color: 
+						rgba: rgba(202, 0, 13, 255)
+					Ellipse:
+						size: 150, 150 #sendiri ?? wkwk
+						pos: self.center_x - 75, self.center_y - 75
+
+			MDLabel:
+				id: label_full_name
+				text: ""
+				font_name: "Roboto"
+				font_size: "12sp"
+				halign: "center"
+				pos_hint: {"center_x": .5, "center_y":.35}
+				bold: True
+
+			MDLabel:
+				id: label_bio
+				text: ""
+				font_name: "Roboto"
+				font_size: "12sp"
+				halign: "center"
+				pos_hint: {"center_x": .5, "center_y":.25}
