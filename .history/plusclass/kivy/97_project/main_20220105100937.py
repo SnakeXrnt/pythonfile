@@ -43,7 +43,7 @@ class MyApp(MDApp):
 	def to_add_page(self, *args):
 		self.screen_manager.current = "add"
 	def to_settings_page(self, *args):
-		self.screen_manager.current = "settings"
+		self.screen_manager.current = "add"
   
 	def logger(self):
 		username_entry = self.root.screens[1].ids['username_entry'].text
