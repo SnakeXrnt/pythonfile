@@ -26,7 +26,7 @@ class MyApp(MDApp):
 		self.screen_manager.add_widget(Builder.load_file("pages/login.kv"))
 		self.screen_manager.add_widget(Builder.load_file("pages/dashboard.kv"))
 		self.screen_manager.add_widget(Builder.load_file("pages/passviewer.kv"))
-		self.screen_manager.add_widget(Builder.load_file("pages/add.kv"))
+		self.screen_manager.add_widget(Builder.load_file("pages/.kv"))
 
 	def build(self):
 		self.screen_manager.current = "splash"

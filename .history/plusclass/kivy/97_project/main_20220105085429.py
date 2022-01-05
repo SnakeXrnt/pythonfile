@@ -26,7 +26,6 @@ class MyApp(MDApp):
 		self.screen_manager.add_widget(Builder.load_file("pages/login.kv"))
 		self.screen_manager.add_widget(Builder.load_file("pages/dashboard.kv"))
 		self.screen_manager.add_widget(Builder.load_file("pages/passviewer.kv"))
-		self.screen_manager.add_widget(Builder.load_file("pages/add.kv"))
 
 	def build(self):
 		self.screen_manager.current = "splash"
@@ -39,8 +38,7 @@ class MyApp(MDApp):
 		self.screen_manager.current = "login"
 	def to_home_page(self, *args):
 		self.screen_manager.current = "dashboard"
-	def to_add_page(self, *args):
-		self.screen_manager.current = "add"
+
 	
   
 	def logger(self):
