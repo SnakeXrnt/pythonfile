@@ -7,7 +7,6 @@ from kivy.core.window import Window
 from kivymd.uix.button import MDFlatButton
 from settings import Settings
 from models.user import User
-import bcrypt
 
 from kivy.config import Config
 
@@ -65,7 +64,7 @@ class MyApp(MDApp):
 
 		if user:
 			if bcrypt.checkpw(password_entry.encode("utf-8"), user[2]):
-    			#self.root.screens[1].ids['msg'].text = ""
+				self.root.screens[1].ids['msg'].text = ""
 				self.root.screens[1].ids['username_entry'].text = ""
 				self.root.screens[1].ids['password_entry'].text = ""
 				"""

@@ -65,7 +65,7 @@ class MyApp(MDApp):
 
 		if user:
 			if bcrypt.checkpw(password_entry.encode("utf-8"), user[2]):
-    			#self.root.screens[1].ids['msg'].text = ""
+				self.root.screens[1].ids['msg'].text = ""
 				self.root.screens[1].ids['username_entry'].text = ""
 				self.root.screens[1].ids['password_entry'].text = ""
 				"""
