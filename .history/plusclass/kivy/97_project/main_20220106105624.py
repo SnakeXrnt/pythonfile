@@ -78,7 +78,7 @@ class MyApp(MDApp):
 			else:
 				print('not ok')
 
-		#self.root.screens[1].ids['msg'].text = "Login Gagal"
+		self.root.screens[1].ids['msg'].text = "Login Gagal"
 		self.root.screens[1].ids['username_entry'].text = ""
 		self.root.screens[1].ids['password_entry'].text = ""
 

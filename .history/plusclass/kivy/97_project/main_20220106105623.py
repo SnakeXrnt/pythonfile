@@ -72,13 +72,13 @@ class MyApp(MDApp):
 				"""
 				self.current_user.id = user[0]
 				self.current_user.pic = user[8]
-				self.current_user.password = user[2]"""
+				self.current_user.password = user[2]"
 				self.to_home_page()
 				return True
 			else:
 				print('not ok')
 
-		#self.root.screens[1].ids['msg'].text = "Login Gagal"
+		self.root.screens[1].ids['msg'].text = "Login Gagal"
 		self.root.screens[1].ids['username_entry'].text = ""
 		self.root.screens[1].ids['password_entry'].text = ""
 
