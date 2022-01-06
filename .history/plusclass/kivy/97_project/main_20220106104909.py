@@ -5,8 +5,7 @@ from kivymd.uix.dialog import MDDialog
 from kivy.core.text import LabelBase
 from kivy.core.window import Window
 from kivymd.uix.button import MDFlatButton
-from settings import Settings
-from models.user import User
+
 
 from kivy.config import Config
 
