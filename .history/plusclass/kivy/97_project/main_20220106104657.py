@@ -44,9 +44,16 @@ class MyApp(MDApp):
 		self.screen_manager.current = "add"
 	def to_settings_page(self, *args):
 		self.screen_manager.current = "settings"
+  
+	def logger(self):
+		username_entry = self.root.screens[1].ids['username_entry'].text
+		password_entry = self.root.screens[1].ids['password_entry'].text
+		if username_entry == password_entry:
+			self.screen_manager.current = "dashboard"
+		else:
+			pass
 
-
-	def find_user_by_username(self, username):
+def find_user_by_username(self, username):
 		with self.settings.conn:
 			self.settings.cur.execute("""
 					SELECT * FROM users WHERE username = :username
@@ -64,12 +71,12 @@ class MyApp(MDApp):
 				self.root.screens[1].ids['msg'].text = ""
 				self.root.screens[1].ids['username_entry'].text = ""
 				self.root.screens[1].ids['password_entry'].text = ""
-				"""
+
 				self.current_user = User(user[1], user[3], user[4], user[5], user[6], user[7])
 				self.current_user.id = user[0]
 				self.current_user.pic = user[8]
-				self.current_user.password = user[2]"""
-				self.to_home_page()
+				self.current_user.password = user[2]
+				self.to_dashboard()
 				return True
 			else:
 				print('not ok')

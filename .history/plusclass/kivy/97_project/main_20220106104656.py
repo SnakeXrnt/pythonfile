@@ -44,39 +44,15 @@ class MyApp(MDApp):
 		self.screen_manager.current = "add"
 	def to_settings_page(self, *args):
 		self.screen_manager.current = "settings"
-
-
-	def find_user_by_username(self, username):
-		with self.settings.conn:
-			self.settings.cur.execute("""
-					SELECT * FROM users WHERE username = :username
-					""", {"username" : username})
-		return self.settings.cur.fetchone()
-
+  
 	def logger(self):
 		username_entry = self.root.screens[1].ids['username_entry'].text
 		password_entry = self.root.screens[1].ids['password_entry'].text
+		if username_entry == password_entry:
+			self.screen_manager.current = "dashboard"
+		else:
+			pass
 
-		user = self.find_user_by_username(username_entry)
-
-		if user:
-			if bcrypt.checkpw(password_entry.encode("utf-8"), user[2]):
-				self.root.screens[1].ids['msg'].text = ""
-				self.root.screens[1].ids['username_entry'].text = ""
-				self.root.screens[1].ids['password_entry'].text = ""
-				"""
-				self.current_user = User(user[1], user[3], user[4], user[5], user[6], user[7])
-				self.current_user.id = user[0]
-				self.current_user.pic = user[8]
-				self.current_user.password = user[2]"""
-				self.to_home_page()
-				return True
-			else:
-				print('not ok')
-
-		self.root.screens[1].ids['msg'].text = "Login Gagal"
-		self.root.screens[1].ids['username_entry'].text = ""
-		self.root.screens[1].ids['password_entry'].text = ""
 
   
 

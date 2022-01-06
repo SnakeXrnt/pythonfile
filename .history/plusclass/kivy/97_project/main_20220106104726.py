@@ -69,7 +69,7 @@ class MyApp(MDApp):
 				self.current_user.id = user[0]
 				self.current_user.pic = user[8]
 				self.current_user.password = user[2]"""
-				self.to_home_page()
+				self.to_dashboard()
 				return True
 			else:
 				print('not ok')
