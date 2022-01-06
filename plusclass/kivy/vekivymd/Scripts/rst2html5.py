@@ -1,4 +1,4 @@
-#!c:\users\ethan\python\kivy\vekivymd\scripts\python.exe
+#!c:\users\ethan\python\plusclass\kivy\vekivymd\scripts\python.exe
 # -*- coding: utf8 -*-
 # :Copyright: © 2015 Günter Milde.
 # :License: Released under the terms of the `2-Clause BSD license`_, in short:
