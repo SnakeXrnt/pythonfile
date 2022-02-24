@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive And Stop</title>
+    <script type="text/javascript">
+
+        let alarm = setTimeout( () => {alert("You need to do your homework!")}, 3000);
+        
+        function stopAlarm() {
+
+            if (document.querySelector("#status").innerHTML === "On") {
+                clearTimeout(alarm);
+                document.querySelector("#status").innerHTML = "Off";
+                document.querySelector("button").innerHTML = "Start Alarm";
+                document.querySelector("#status").style.color = "red";
+            } else {
+                document.querySelector("#status").innerHTML = "On";
+                document.querySelector("button").innerHTML = "Stop Alarm";
+                alarm = setTimeout( () => {alert("You need to do your homework!")}, 3000);
+                document.querySelector("#status").style.color = "green";
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Alarm <span id="status">On</span></h1>
+    <button onclick="stopAlarm()">Stop Alarm</button>
+</body>
+</html>

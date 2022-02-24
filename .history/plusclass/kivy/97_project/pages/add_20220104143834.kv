@@ -1,0 +1,40 @@
+#:import get_color_from_hex kivy.utils.get_color_from_hex
+
+
+Screen:
+	name: "add"
+	MDFloatLayout:
+		md_bg_color: rgba(21, 34, 56,255)
+
+    MDLabel: 
+        text: 'Chose the app you want to save the password'
+		font_size : '13sp'
+		pos_hint: {"center_x":.53, "center_y":.87}
+		color: rgba(255,255,255, 255)
+    
+    MDNavigationLayout:
+
+        ScreenManager:
+
+            MDScreen:
+
+                MDToolbar:
+                    title: "Password Saver"
+                    elevation: 10
+                    pos_hint: {"top": 1}
+                    md_bg_color: rgba(35, 57, 93,255)
+                    specific_text_color: rgba(255,255,255,255)
+                    left_action_items:
+                        [['menu', lambda x: nav_drawer.set_state("open")]]
+
+
+        MDNavigationDrawer:
+			id: nav_drawer
+            md_bg_color: rgba(25, 40, 65,255)
+	MDIconButton:
+		icon: 'logout'
+		theme_text_color: 'Custom'
+		text_color: rgba(255,255,255, 255)
+		pos_hint: {"center_x":.9, "center_y":.95}
+		icon_size : '20sp'
+		on_press : app.to_home_page()

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animating JQuery</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+
+        function change() {
+            $('h1').text('Hello Wo');
+        }
+
+        let changeText = () => {
+            $("h1").fadeOut(2000)
+            setTimeout(change(),2000)
+            $("h1").fadeIn(2000)
+    </script>
+</head>
+<body>
+    <h1>Javascript is boring</h1>
+    <button>Click Me!</button>
+
+    <script type="text/javascript">
+        // $("h1").fadeOut(3000);
+        // $("h1").fadeIn(3000);
+        // $("h1").slideUp(3000);
+        // $("h1").slideDown(3000); 
+
+        // $("h1").fadeOut(3000).fadeIn(3000);
+
+    </script>
+</body>
+</html>

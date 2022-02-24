@@ -1,4 +1,5 @@
 from os import system
+import bcrypt
 
 from settings import Settings
 from employee import Employee
@@ -7,6 +8,12 @@ class App:
 	
 	def __init__(self):
 		self.settings = Settings()
+		self.get_last_id()
+
+	def get_last_id(self):
+		self.settings.CUR.execute("SELECT * FROM employees ORDER BY id DESC LIMIT 1")
+		emp = self.settings.CUR.fetchone()
+		Employee.counter = emp[0]+1
 
 	def get_all_emps(self):
 		with self.settings.CONN:
@@ -15,7 +22,7 @@ class App:
 
 	def insert_emp(self, emp):
 		with self.settings.CONN:
-			self.settings.CUR.execute("INSERT INTO employees VALUES (:first, :last, :salary)", {"first":emp.first, "last":emp.last, "salary":emp.salary})
+			self.settings.CUR.execute("INSERT INTO employees VALUES (:id, :username, :password, :first, :last, :salary)", {"id":emp.id, "username":emp.username, "password":emp.password, "first":emp.first, "last":emp.last, "salary":emp.salary})
 
 	def find_emp(self, first):
 		with self.settings.CONN:
@@ -48,8 +55,18 @@ class App:
 				input("Press Enter to Return")
 			elif option == '2':
 				system("cls")
-				first, last, salary = input().split()
-				emp = Employee(first, last, salary)
+				username, first, last, salary = input().split()
+				emp = Employee(username, first, last, salary)
+
+				password = input("Enter New Password:")
+				repassword = input("Enter New Password:")
+
+				while password != repassword:
+					print("Password doesn't match")
+					repassword = input("ReEnter New Password: ")
+				else:
+					emp.password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
+
 				self.insert_emp(emp)
 				print("DONE!!")
 				input("Press Enter to Return")

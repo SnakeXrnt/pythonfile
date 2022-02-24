@@ -1,0 +1,90 @@
+#:import get_color_from_hex kivy.utils.get_color_from_hex
+
+
+Screen:
+	name: "settings"
+	MDFloatLayout:
+		md_bg_color: rgba(21, 34, 56,255)
+        canvas:
+            Color:
+                rgb: 1, 1, 1
+            Ellipse:
+                pos: 100, 410
+                size: 150 , 150
+                source: 'asset/logotoko.png'
+                angle_start: 0
+                angle_end: 360
+        
+        MDLabel:
+            text: 'Toko Terang Jaya'
+            pos_hint: {'center_x': .5, 'center_y': .6}
+            font_size: '30sp'
+            halign: "center"
+            color: rgba(255,255,255, 255)
+        
+            MDNavigationLayout:
+
+        ScreenManager:
+
+            MDScreen:
+
+                MDToolbar:
+                    title: "Password Saver"
+                    elevation: 10
+                    pos_hint: {"top": 1}
+                    md_bg_color: rgba(35, 57, 93,255)
+                    specific_text_color: rgba(255,255,255,255)
+	MDIconButton:
+		icon: 'logout'
+		theme_text_color: 'Custom'
+		text_color: rgba(255,255,255, 255)
+		pos_hint: {"center_x":.9, "center_y":.95}
+		icon_size : '20sp'
+		on_press : app.to_home_page()
+    
+    MDLabel:
+        text: 'List of connected acoounts'
+        pos_hint: {'center_x': .53, 'center_y': .54}
+        font_size: '20sp'
+        color: rgba(255,255,255, 255)
+    
+    TwoLineListItem:
+		text_color: rgba(255,255,255, 255)
+        secondary_text_color: rgba(255,255,255, 255)
+        theme_text_color:'Custom'
+        secondary_theme_text_color:'Custom'
+        text: 'Google'
+        secondary_text: 'tokoterangjaya2@gmail.com'
+        divider: 'Full'
+        divider_color: rgba(255,255,255, 255)
+        pos_hint: {"center_x":.5, "center_y":.48}
+    TwoLineListItem:
+		text_color: rgba(255,255,255, 255)
+        secondary_text_color: rgba(255,255,255, 255)
+        theme_text_color:'Custom'
+        secondary_theme_text_color:'Custom'
+        text: 'Facebook'
+        secondary_text: 'annicca'
+        divider: 'Full'
+        divider_color: rgba(255,255,255, 255)
+        pos_hint: {"center_x":.5, "center_y":.4}
+
+    MDLabel:
+        text: 'OTP'
+        pos_hint: {'center_x': .53, 'center_y': .34}
+        font_size: '20sp'
+        color: rgba(255,255,255, 255)
+    TwoLineListItem:
+		text_color: rgba(255,255,255, 255)
+        secondary_text_color: rgba(255,255,255, 255)
+        theme_text_color:'Custom'
+        secondary_theme_text_color:'Custom'
+        text: 'Phone Number'
+        secondary_text: '0813-6844-9686'
+        divider: 'Full'
+        divider_color: rgba(255,255,255, 255)
+        pos_hint: {"center_x":.5, "center_y":.28}
+
+
+
+        

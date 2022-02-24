@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter ES6</title>
+    <script type="text/javascript">
+        
+        let counter = 0;
+        let count = () => {
+            counter++;
+            document.querySelector("#counter").innerHTML = counter;
+
+            if (counter % 10 === 0){
+                alert(`counternya sudah ${counter}`);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1 id="counter">0</h1>
+    <button onclick="count()">CLICK ME!!!</button>
+</body>
+</html>

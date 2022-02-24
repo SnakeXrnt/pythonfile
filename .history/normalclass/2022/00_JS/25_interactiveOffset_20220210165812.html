@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offset</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script text="text/javascript">
+        // $('h1').offset({left : 200});
+
+        // $('h1').offset({top : 500});
+
+        // $('h1').offset({left : 200, top : 500});
+
+        let  xPos = 0;
+
+        let move = function (){
+            $('h1').offset({left : xPos});
+            xPos++;
+
+            if (xPos > 400) {
+                xPos = -30;
+            }
+        }
+
+        let mainsetInterval(move,3);
+            
+    </script>
+    <button onclick="stop()">STOP RUNNING!!</button>
+</body>
+</html>

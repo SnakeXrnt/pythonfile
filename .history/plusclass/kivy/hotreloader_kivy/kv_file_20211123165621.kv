@@ -1,0 +1,114 @@
+
+
+Screen:
+	name: "login"
+	MDFloatLayout:
+		md_bg_color: rgba(58, 58, 58, 255)
+
+        Image:
+            id: profile_pic
+            source: "asset/illus/loginpage.png"
+            size_hint_y: .3
+            pos_hint: {"center_x":.5, "center_y": .83}
+            canvas.before:
+            
+
+		MDLabel:
+			text: "Hi! \nWelcome"
+			font_size: "34sp"
+			font_name: "Roboto"
+			color: rgba(107, 127, 214, 255)
+			pos_hint: {"center_x":.6, "center_y":.63}
+
+		MDFloatLayout:
+			size_hint: .8, .08
+			pos_hint: {"center_x":.5, "center_y":.49}
+
+			MDLabel:
+				text: "Username"
+				font_size: "14sp"
+				pos_hint: {"center_x": .5, "center_y":.95}
+				color: rgba(107, 127, 214, 255)
+				background_color: rgba(107, 127, 214, 255)
+			TextInput:
+				id: username_entry 
+				size_hint: 1, .75
+				font_name: "Roboto"
+				pos_hint: {"center_x": .5, "center_y": .2}
+				background_color: 0,0,0,0
+				foreground_color: rgba(107, 127, 214, 255)
+				multiline: False
+				write_tab: False
+			MDIcon:
+				icon: "account"
+				font_size: "30sp"
+				pos_hint: {"center_x":1.4, "center_y":.4}
+				color: rgba(107, 127, 214, 255)
+			MDFloatLayout:
+				size_hint: 1, .03
+				pos_hint: {"center_x": .5, "center_y":0}
+				md_bg_color: rgba(107, 127, 214, 255)
+
+		MDFloatLayout:
+			size_hint: .8, .08
+			pos_hint: {"center_x":.5, "center_y":.4}
+
+			MDLabel:
+				text: "Password"
+				font_size: "14sp"
+				pos_hint: {"center_x": .5, "center_y":.7}
+				color: rgba(107, 127, 214, 255)
+				background_color: rgba(107, 127, 214, 255)
+			TextInput:
+				id: password_entry
+				size_hint: 1, .75
+				font_name: "Roboto"
+				pos_hint: {"center_x": .5, "center_y": .2}
+				background_color: 0,0,0,0
+				foreground_color: rgba(107, 127, 214, 255)
+				multiline: False
+				write_tab: False
+				password: True
+			MDIcon:
+				icon: "key"
+				font_size: "30sp"
+				pos_hint: {"center_x":1.4, "center_y":.4}
+				color: rgba(107, 127, 214, 255)
+			MDFloatLayout:
+				size_hint: 1, .03
+				pos_hint: {"center_x": .5, "center_y": 0}
+				md_bg_color: rgba(107, 127, 214, 255)
+
+		Button:
+			text: "Enter Application"
+			size_hint: .45, .08
+			pos_hint: {"center_x": .5, "center_y": .28}
+			background_color: 0,0,0,0
+			font_name: "Roboto"
+			font_size: "18sp"
+			bold: True
+			canvas.before:
+				Color:
+					rgba: rgba(107, 127, 214, 255)
+				RoundedRectangle:
+					size: self.size
+					pos: self.pos
+					radius:[25]
+			on_press: app.logger()
+
+		Button:
+			text: "Enter Application"
+			size_hint: .5, .08
+			pos_hint: {"center_x": .5, "center_y": .18}
+			background_color: 0,0,0,0
+			font_name: "Roboto"
+			font_size: "18sp"
+			bold: True
+			canvas.before:
+				Color:
+					rgba: rgba(107, 127, 214, 255)
+				RoundedRectangle:
+					size: self.size
+					pos: self.pos
+					radius:[25]
+			on_press: app.logger()

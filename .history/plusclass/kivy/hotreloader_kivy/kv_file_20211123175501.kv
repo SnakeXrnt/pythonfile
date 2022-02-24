@@ -1,0 +1,96 @@
+# 56, 40, 81
+MDScreen:
+    md_bg_color:56/255,40/255,81/255,1
+    MDBoxLayout:
+        orientation:'vertical'
+        MDBoxLayout:
+            size_hint_y:.25
+            padding:dp(25)
+            MDBoxLayout:
+                orientation:"vertical"
+                MDLabel:
+                    id : sapa_user
+                    text:"Hi"
+                    font_style:"H4"
+                MDBoxLayout:
+                    adaptive_size:True
+                    spacing:dp(10)
+                    MDLabel:
+                        text:"Home"
+                        text_size:None,None
+                        adaptive_width:True
+                    MDIcon:
+                        icon:'chevron-down'
+
+            MDIconButton:
+                icon:"asset/illus/notification.png"
+        MDGridLayout:
+            size_hint_y:.75
+            cols:2
+            padding:[dp(15),dp(15),dp(15),dp(35)]
+            spacing:dp(15)
+            ElementCard:
+                image:"asset/illus/warehouse.png"
+                text:"Keluarkan Barang"
+                subtext:""
+
+
+            ElementCard:
+                image:"asset/illus/pdf.png"
+                text:"Masukan Barang"
+                subtext:""
+
+
+            ElementCard:
+                image:"asset/illus/map.png"
+                text:"Export Ke \nCSV"
+                subtext:"Lucy Mao going to Office"
+
+
+            ElementCard:
+                image:"asset/illus/festival.png"
+                text:"Export Ke \nPDF"
+                items_count:""
+
+
+            ElementCard:
+                image:"asset/illus/todo.png"
+                text:"To Do"
+                subtext:""
+
+
+            ElementCard:
+                image:"asset/illus/setting.png"
+                text:"Setting"
+                subtext:""
+
+
+
+<ElementCard@MDCard>:
+    md_bg_color:69/255,55/255,86/255,1
+    padding:dp(15)
+    spacing:dp(15)
+    radius:dp(25)
+    ripple_behavior: True
+    image:''
+    text:""
+    subtext:''
+    on_press: app.logger()
+
+    orientation:'vertical'
+    Image:
+        source:root.image
+    MDBoxLayout:
+        orientation:'vertical'
+        MDLabel:
+            halign:"center"
+            text:root.text
+            font_style:"H6"
+        MDLabel:
+            halign:"center"
+            font_style:"Caption"
+            text:root.subtext
+
+        
+
+    

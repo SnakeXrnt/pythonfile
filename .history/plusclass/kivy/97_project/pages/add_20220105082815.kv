@@ -1,0 +1,95 @@
+#:import get_color_from_hex kivy.utils.get_color_from_hex
+
+<Check@MDCheckbox>:
+    group: 'group'
+    size_hint: None, None
+    size: dp(48), dp(48)
+    color: rgba(255,255,255, 255)
+
+Screen:
+	name: "add"
+	MDFloatLayout:
+		md_bg_color: rgba(21, 34, 56,255)
+
+    MDLabel: 
+        text: 'Chose the app you want to save the password'
+		font_size : '13sp'
+		pos_hint: {"center_x":.53, "center_y":.87}
+		color: rgba(255,255,255, 255)
+
+    
+    
+    MDNavigationLayout:
+
+        ScreenManager:
+
+            MDScreen:
+
+                MDToolbar:
+                    title: "Password Saver"
+                    elevation: 10
+                    pos_hint: {"top": 1}
+                    md_bg_color: rgba(35, 57, 93,255)
+                    specific_text_color: rgba(255,255,255,255)
+                    left_action_items:
+                        [['menu', lambda x: nav_drawer.set_state("open")]]
+
+
+        MDNavigationDrawer:
+			id: nav_drawer
+            md_bg_color: rgba(25, 40, 65,255)
+	MDIconButton:
+		icon: 'logout'
+		theme_text_color: 'Custom'
+		text_color: rgba(255,255,255, 255)
+		pos_hint: {"center_x":.9, "center_y":.95}
+		icon_size : '20sp'
+		on_press : app.to_home_page()
+    
+    Check:
+        pos_hint: {'center_x': .07, 'center_y': .82}
+
+    Check:
+        pos_hint: {'center_x': .27, 'center_y': .82}
+    
+    Check:
+        pos_hint: {'center_x': .47, 'center_y': .82}
+
+    Check:
+        pos_hint: {'center_x': .67, 'center_y': .82}
+    Check:
+        pos_hint: {'center_x': .87, 'center_y': .82}
+    
+    MDIcon:
+		icon : 'instagram'
+		font_size: "30sp"
+		pos_hint: {"center_x":.6, "center_y":.823}
+		color: rgba(32, 105, 224,255)
+    MDIcon:
+		icon : 'facebook'
+		font_size: "30sp"
+		pos_hint: {"center_x":.8, "center_y":.823}
+		color: rgba(32, 105, 224,255)
+    MDIcon:
+		icon : 'google'
+		font_size: "30sp"
+		pos_hint: {"center_x":1.0, "center_y":.823}
+		color: rgba(32, 105, 224,255)
+    MDIcon:
+		icon : 'microsoft'
+		font_size: "30sp"
+		pos_hint: {"center_x":1.2, "center_y":.823}
+		color: rgba(32, 105, 224,255)
+    MDIcon:
+		icon : 'dots-horizontal-circle'
+		font_size: "30sp"
+		pos_hint: {"center_x":1.4, "center_y":.823}
+		color: rgba(32, 105, 224,255)
+    
+    MDLabel: 
+        text: 'Insert the email here '
+		font_size : '13sp'
+		pos_hint: {"center_x":.53, "center_y":.77}
+		color: rgba(255,255,255, 255)
+    MDT
+    

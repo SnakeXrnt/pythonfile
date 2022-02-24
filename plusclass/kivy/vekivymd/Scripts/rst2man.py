@@ -1,4 +1,4 @@
-#!c:\users\ethan\python\kivy\vekivymd\scripts\python.exe
+#!c:\users\ethan\python\plusclass\kivy\vekivymd\scripts\python.exe
 
 # Author:
 # Contact: grubert@users.sf.net
