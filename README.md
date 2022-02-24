@@ -14,6 +14,8 @@ Hello folks , this is my github repository . i mainly wrote python files here . 
 
 My laptop : Lenovo idea-Pad S340-14API 
 
+Supporting Device : Xiaomi Pad 5 , Galaxy Tab S7+
+
 Specs : Ryzen 5 3500U , with Vega 8 iGpu , 8GB of ram , dual ssd (WD-NVME-SSD (512GB), SanDisk SSD PLUS (480GB))
 
 OS : Dual Boot ( Windows 11 , other linux or mac os type that i like)
