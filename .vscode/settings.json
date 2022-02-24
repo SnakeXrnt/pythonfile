@@ -8,7 +8,7 @@
     ],
     "python.testing.pytestEnabled": false,
     "python.testing.unittestEnabled": true,
-    "gitdoc.enabled": true,
+    "gitdoc.enabled": false,
     "files.associations": {
         "random": "cpp"
     }
