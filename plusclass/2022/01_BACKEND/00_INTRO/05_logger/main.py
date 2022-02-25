@@ -15,7 +15,7 @@ def logger(original_function):
     return wrapper
 
 
-@logger  
+@logger 
 def display_info(name,age):
     print('display_info ran with args {}{}{}'.format(name,age))
 
