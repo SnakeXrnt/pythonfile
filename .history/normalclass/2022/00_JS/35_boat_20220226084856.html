@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing Lines</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="400" height="400" style="background-color:gray;"></canvas>
+    <script type="text/javascript">
+        let canvas = document.getElementById("myCanvas");
+        let ctx = canvas.getContext("2d");
+
+        ctx.strokeStyle = "Black";
+        ctx.lineWidth = 3;
+        ctx.fillStyle = "white";
+
+        ctx.beginPath();
+        ctx.moveTo(100,25);
+        ctx.lineTo(100,60);
+        ctx.lineTo(130,30);
+        ctx.lineTo(160,60);
+        ctx.lineTo(160,100);
+        ctx.lineTo(100,100);
+        ctx.closePath();
+        ctx.stroke();
+        ctx.fill();
+    </script>
+</body>
+</html>

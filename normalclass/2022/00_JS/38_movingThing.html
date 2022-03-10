@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Making Thing Move</title>
+</head>
+<body>
+	<canvas id="canvas" width="800" height="800" style="background-color: grey;"></canvas>
+	<script type="text/javascript">
+		let canvas = document.getElementById("canvas");
+		let ctx = canvas.getContext("2d");
+
+		let positionX = 0;
+		let direction = 5;
+		let colors = ["red", "orange", "yellow", "green", "blue", "magenta", "purple"];
+		ctx.fillStyle = colors[0];
+
+		setInterval(()=>{
+			ctx.clearRect(0, 0, canvas.width, canvas.height);
+			ctx.fillRect(positionX, 0, 20, 20);
+			positionX += direction;
+			
+			//check right edge
+			if (positionX >= canvas.width-20) {
+				direction = -5;
+				color = colors[Math.floor(colors.length*Math.random())];
+				ctx.fillStyle = color;
+			} else if (positionX <= 0) {
+				direction = 5;
+				color = colors[Math.floor(colors.length*Math.random())]
+				ctx.fillStyle = color;
+			}
+		}, 10)
+
+	</script>
+</body>
+</html>

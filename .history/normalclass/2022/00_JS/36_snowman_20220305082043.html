@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnowMan</title>
+</head>
+<body>
+    <canvas id="canvas" width="800" height="800" style="background-color: grey;"></canvas>
+    <script type="text/javascript">
+        let canvas = document.getElementById('canvas');
+        let ctx = canvas.getContext('2d');
+
+        let circle = function (x,y,radius,color,isFilled) {
+            ctx.beginPath();
+            ctx.arc(x,y,radius,0,Math.PI*2,false);
+            ctx.closePath();
+            ctx.stroke();
+            if (isFilled) {
+                ctx.fillStyle = color;
+                ctx.fill();
+            }
+        }
+
+        let snowman = function (x,y,color) {
+            let head = circle(x,y,50,color,true);
+            let leftEye = circle(x-20,y-20 , 10, '#000000', true);
+            let rightEye = circle(x+20,y-20 , 10, '#000000', true);
+    
+            let nose = circle(x,y-5,5,'orange',true);
+    
+            ctx.beginPath();
+            ctx.arc(x,y+10,20,0,Math.PI,false);
+            
+    
+            let body = circle(x,y+45+100,100,color,true);
+    
+        }
+
+        snowman(300,300,'Purple');
+
+    </script>
+</body>
+</html>

@@ -11,5 +11,6 @@
     "gitdoc.enabled": false,
     "files.associations": {
         "random": "cpp"
-    }
+    },
+    "materialkv.pythonFile": "main.py"
 }
