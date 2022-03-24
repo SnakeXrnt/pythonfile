@@ -1,0 +1,35 @@
+<!--Mengubah Warna Element dengan id header mengugunakan button melalui DOM BROWSER-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Color</title>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('#red').onclick = function() {
+                document.querySelector('#header').style.color = 'red';
+            }
+            document.querySelector('#blue').onclick = function() {
+                document.querySelector('#header').style.color = 'blue';
+            }
+            document.querySelector('#green').onclick = function() {
+                document.querySelector('#header').style.color = 'green';
+            }
+        })
+    </script>
+</head>
+
+<body>
+    <h1 id="header">Change Color</h1>
+    <button id="red">Red</button>
+    <button id="blue">Blue</button>
+    <button id="green">Green</button>
+
+
+</body>
+
+</html>
