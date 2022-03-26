@@ -5,5 +5,4 @@ for list in list:
     print()
     
 #texts = []
-#text = 'x' * 3
-#for 1 in range(3)
+#text = 'x'
