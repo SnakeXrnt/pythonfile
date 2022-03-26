@@ -5,4 +5,4 @@ for list in list:
     print()
     
 #texts = []
-#text = 'x'
+#text = 'x
