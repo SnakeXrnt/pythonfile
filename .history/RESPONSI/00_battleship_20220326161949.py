@@ -14,5 +14,4 @@ texts = ['x' * 3 for i in range(3)]
 #print(texts)
 #text = ['xxx','xxx','xxx']
 '''
-for text in texts:
-'''
+for text in texts'''
