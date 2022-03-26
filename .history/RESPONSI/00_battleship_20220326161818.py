@@ -4,4 +4,5 @@ for list in list:
         print(item,end='')
     print()
     
-#text = []
+#text = [
+]
