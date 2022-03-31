@@ -7,14 +7,7 @@
     <title>Adding List</title>
     <script type='text/javascript'>
         document.addEventListener('DOMContentLoaded', function() {
-            document.querySelector('#form-task').onsubmit = function() {
-                var task = document.querySelector('#task').value;
-                var list = document.querySelector('#list');
-                var option = document.createElement('option');
-                option.text = task;
-                list.add(option);
-                return false;
-            }
+            document.querySelector('#form-task').onsubmit =
         });
     </script>
 </head>
