@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adding List</title>
+    <script type='text/javascript'>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, options);
+        });
+    </script>
+</head>
+
+<body>
+    <h1>To Do List</h1>
+    <ul id="tasks"></ul>
+    <form id="form-task">
+        <input type="text"> name </form>
+    <input type="submit" value="Add Task">
+
+</body>
+
+</html>
