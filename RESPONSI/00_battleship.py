@@ -7,4 +7,5 @@ def printing_board(board):
     for row in board:
         print (" ".join(row))
         
-def setting_up_ship_location (rows)
+def setting_up_ship_location (rows):
+    
