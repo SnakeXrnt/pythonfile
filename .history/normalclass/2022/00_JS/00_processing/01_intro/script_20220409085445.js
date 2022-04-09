@@ -15,7 +15,6 @@ function draw() {
     fill(0,255,0,160);
     ellipse (300,200,200,200);
 
-    fill(0,0,255,160);
-    
+    fill(0,0,255,160)
     console.log("Ok MainlOOP");
 }
