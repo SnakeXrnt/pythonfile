@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded',() => {
         width : canvas.width,
         height : canvas.height,
 
-        draw : function(){
+        draw : () => {
             ctx.fillStyle = this.color;
             const top = ctx.fillRect(0,0,this.width,this.size);
         }
