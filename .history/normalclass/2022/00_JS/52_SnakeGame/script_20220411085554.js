@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded',() => {
         }
     }
 
-    border.draw();
+    border.draw()
 
 
 })
