@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
             this.segments = [
                 new Block(7,5),
                 new Block(6,5),
-                new Block(5,5),
+                new block(5,5),
             ]
         }
 
