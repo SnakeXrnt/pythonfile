@@ -55,9 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ]
         }
 
-        draw() {
-            
-        }
+        draw() {}
     }
 
     border.draw();
