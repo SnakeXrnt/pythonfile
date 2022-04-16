@@ -42,8 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
             ctx.arc(x , y , radius , 0 , 2 * Math.PI);
             ctx.stroke();
             if(isFilled) {
-                ctx.fill();
-            }
         }
 
         drawSquare(color) {
