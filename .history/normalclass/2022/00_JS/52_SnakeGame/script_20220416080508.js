@@ -56,9 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         draw() {
-            this.segments.forEach(segment => {
-                segment.drawSquare("green");
-            });
+            
         }
     }
 
