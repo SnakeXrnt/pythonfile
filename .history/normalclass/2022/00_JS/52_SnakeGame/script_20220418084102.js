@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         draw : function() {
                 const x = 0;
-                const y = 0;
+                const y : 0;
                 ctx.font = this.font;
                 ctx.fillStyle = this.color;
                 ctx.textAlign = this.align;
