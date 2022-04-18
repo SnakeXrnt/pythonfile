@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
     apple.draw();
 
     document.addEventListener("body".onkeydown = (event) => {
-        console.log(event.code);
+        console.log(event.code)
     }
     // let block = new Block(4,5);
     // block.drawSquare("red");
