@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let apple = new Apple();
     apple.draw();
 
-    document.addEventListener('keydown', (event) => {
+    document
     // let block = new Block(4,5);
     // block.drawSquare("red");
 
