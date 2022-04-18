@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         setDirection(newDirection) {
-            
+            i
             this.nextDirection = newDirection;
         }
     }
