@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             this.segment.forEach((segment,i) => {
                 if(head.row === segment.row && head.column === segment.column){
-                    const selfCollision = true;
+                    const selfCollision = True;
                 }
             })
         }
