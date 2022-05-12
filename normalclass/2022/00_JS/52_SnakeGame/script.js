@@ -88,6 +88,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+	
+
 	class Block {
 
 		constructor(row, column){ //(y, x)
