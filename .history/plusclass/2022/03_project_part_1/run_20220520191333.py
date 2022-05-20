@@ -46,8 +46,6 @@ def home():
 @app.route("/register", methods=['GET', 'POST'])
 def register():
 	form = RegistrationForm()
- if form.validate_on_submit():
-     
 	return render_template('register.html', title='Register', form=form)
 
 
