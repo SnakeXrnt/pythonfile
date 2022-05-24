@@ -23,7 +23,7 @@ class User(db.Model):
 	email = db.Column(db.String(200), unique=True, nullable=False)
 	image_file = db.Column(db.String(100), nullable=False, default='default.jpg')
 	password = db.Column(db.String(100), nullable=False)
- 
+
 	tweets = db.relationship('Tweet', backref='author', lazy=True)
 
 
