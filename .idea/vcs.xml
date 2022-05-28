@@ -2,7 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/RESPONSI/Battleship" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Tkinter-Designer" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/plusclass/2022/00_html/cv_simple" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/project_2022/Tkinter-Designer" vcs="Git" />
   </component>
 </project>
