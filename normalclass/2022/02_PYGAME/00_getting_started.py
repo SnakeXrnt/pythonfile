@@ -98,7 +98,7 @@ def show_hearts():
 			width = heart["rect"].width
  
 		heart["rect"].topright = screen_rect.topright
-		heart["rect"].x -= x + (x + width) * counter
+		heart["rect"].x -= 10
 		heart["rect"].y += 10
 		screen.blit(heart["image"], heart["rect"])
 		counter += 1
